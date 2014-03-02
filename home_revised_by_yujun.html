@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title> Alianza Segura - Compañia</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  
+
+    <style type="text/css">
+
+      body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin: 0;text-align: center;}
+     
+      h1, h2, h3, h4, h5, h6{font-family: 'myriad pro', arial, helevetica, sans-serif; font-weight: normal;margin: 0px;}
+
+      h2{color: #000000; font-size: 26px;padding: 0 0 10px 0; }
+      h3{color: #000000; font-size: 23px;padding: 0 0 10px 0;}
+
+      
+      p {color: #000000; font-size: 15px; line-height: 20px; padding-bottom: 10px; margin: 0px; font-family: 'myriad pro'}
+      li{color: #000000; font-size: 13px; line-height: 20px; margin: 0px;}
+      ul{margin: 0px 0px 10px 0px}
+
+      a{ color: #fff;text-decoration: none;;}
+      a:hover{text-decoration: underline}
+
+      /********************************banner**********************/
+
+      .home-banner{position:relative;min-height:580px;background:url("homeb.jpg") #655043 center center;background-size:cover;color:#fff;}
+      .home-banner .vc{position:absolute;width:90%;top:50%;height:100px; text-align: center;}
+      .home-banner h1{position:absolute;top:-90%;width:100%;font-size:30px;font-weight:normal;line-height:1.6em;text-shadow:1px 1px 1px rgba(0,0,0,1); padding-top:140px; padding-left:71.3px;}
+      #btn-applynow{background:transparent;border:1px solid #fff;font-size:20px; padding:10px;border-radius:8px;}
+      #btn-applynow:hover{opacity:1;background:rgba(255,255,255,0.3); text-decoration:none}
+     
+     /********************************See more**********************/
+     .see-more{width: 100%; position:relative;bottom:0;left:50%;margin-left:-1000px;z-index:5;display:block;height:85px;background:url(down.png);}
+     
+     
+    
+
+      /******************************** products*********************/
+
+      .products {padding-top:70px;background:rgba(189,174,198,0.3);padding-bottom:70px; height:620px;}
+      .thumbnail{width:300px;margin:36.6667px;}
+      .personal{margin-left:210px;}
+      .image .textarea_personal{position:absolute; top:380px; left:265px;width:192px;}
+      .image{float:left; position:relative;text-align:center;}
+      .image .textarea{position:absolute; top:380px; left:90px;width:192px;}
+      .image h3,p {color:#fff;}
+
+       /******************************** companies*********************/
+
+       #companies {padding-top:70px;background:rgba(255,255,255);padding-bottom:70px;height:200px;}
+       #companies h2{color:#595959;margin-bottom:30px; font-size:30px;margin-top:35px;}
+       .thumbnailcomp{ height:50px; float:left;margin-left:20px;}
+       .companiesContainer{margin-left:55px;}
+       
+       #companies a div img{opacity:0.5;}
+       #companies a:hover div img{opacity:1;}
+
+       /******************************** contact us *********************/
+
+       #contact{padding-top:70px;background:url(contact.png);padding-bottom:70px;; height:126px;color:#fff; position:relative;z-index:1;}
+       .contactcontiner{position:absolute; top:90px;left:250px;width:800px; text-align:left;}
+       .infocontact{text-align:left; text-shadow: 0 2px 3px rgba(0,0,0,0.2)}
+       .infocontact h2 {font-size:40px;color:#fff;}
+       .infocontact p {font-size:20px;color:#fff; text-shadow: 0 2px 3px rgba(0,0,0,0.2);}
+       .contactbuttom{float:right;background:#fff;border:1px solid;border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);font-size:20px;border-radius:8px;margin-right:250px; margin-top:60px; padding-left:40px;padding-right:40px;padding-top:10px; padding-bottom:10px;}
+       .contactbuttom a {color:#9c8aa5;font-size:16px;text-decoration:none}
+       .contactbuttom:hover{opacity:1;background:rgba(255,255,255,0.7);}
+
+      .wrapper {
+        min-width: 1445px;
+      }
+
+      .shell {
+        width: 1445px;
+        /*padding: 16px;*/
+        /*background-color: blue;*/
+        
+        /* set the margin left/right as auto to center the  container */
+        margin: 0 auto;
+      }
+
+      .clearfix:before, .clearfix:after {
+        display: table;
+        content: "";
+      }
+
+      .clearfix:after {
+        clear: both;
+      }
+
+      #wd-navbar {
+        height: 62px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+      }
+
+      #wd-navbar li, #wd-navbar .logo {
+        float: left;
+      }
+
+      #wd-navbar ul {
+        list-style: none;
+      }
+
+      #wd-navbar li a {
+        color: black;
+        width: 192px;
+      }
+
+      #wd-navbar li a:hover {
+        background-color: #732c7b;
+      }
+
+      #wd-navbar .logo {
+        padding: 5px 0;
+      }
+
+      #wd-navbar .logo img {
+        height: 52px;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containder">
+      <div id="wd-navbar" class="wrapper"> 
+        <div class="wd-navbar-inner shell clearfix">
+          <div class="logo"> <img src="alianza_segura.png"></div> 
+          <div id="naveb">
+            <ul ul class="nav" id="nav">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="company.html">Nuestra Compañia</a></li>
+              <li>
+                <a href="#">Productos</a>
+                <ul> 
+                  <li>
+                    <a href="#">Seguros Personales </a>
+                  </li>
+                  <li>
+                    <a href="#">Seguros Patrimoniales</a>
+                  </li>
+                  <li>
+                    <a href="#">Seguros Empresariales </a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Recursos</a></li>
+              <li><a href="contact.html">Contactenos</a></li>
+            </ul>
+          </div>
+        </div><!-- shell -->
+      </div> <!-- wrapper -->
+      <div id="bar-back"></div>    
+      <div id="home-banner" class="home-banner wrapper">
+        <div class="shell">
+          <div class="vc">
+            <h1 class="text-center">
+                Somos una empresa familiar creada en el año 1.994. Ubicada en la ciudad de Cali. <br>Comprometida con dar una completa asesoría y acompañamiento, para darle la tranquilidad de tener su patrimonio familiar total mente cubierto ante cualquier imprevisto.
+                <div><a id="btn-applynow" href="company.html" class="btn btn-flat btn-large">Descubra mas aquí </a>
+                </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="see-more wrapper">
+          <a class="shell" href="#"></a>
+      </div>
+      <div class="products wrapper">
+        <div class="shell">
+          <a href="">
+            <div class="image">
+              <img class="thumbnail personal" src="individual.jpg" width="400">
+              <div class="textarea_personal">
+                <h3>SEGUROS PERSONALES</h3>
+                <p>Lo que es valioso para ti, lo es para nosotros </p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="image">
+              <img class="thumbnail" src="auto.jpg" width="400">
+              <div class="textarea">
+                <h3>SEGUROS PATRIMONIALES</h3>
+                <p>Con Alianza Segura tienes la tranquilidad de tener tu patrimonio seguro </p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="image">
+              <img class="thumbnail" src="corp.jpg" width="400">
+              <div class="textarea">
+                <h3>SEGUROS EMPRESARIALES</h3>
+                <p>Estamos pendientes desde el mas pequeño de los detalles, para que usted y sus empleados estén tranquilos</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="companies" class="wrapper">
+        <div id="shell">
+          <h2>Con el Respaldo de Solidas Compañías de Seguros como </h2>
+          <div class="companiesContainer">
+            <a href="https://www.sura.com/default.aspx" target="_blank">
+              <div class="imagecomp">
+                <img class="thumbnailcomp" src="sura.png">
+              </div>
+            </a>
+            <a href="https://www.aseguradorasolidaria.com.co/seguros_colombia" target="_blank">
+              <div class="imagecomp">
+                <img class="thumbnailcomp" src="Solidaria.png">
+              </div>
+            </a>
+            <a href="https://www.generali.com.co/" target="_blank">
+              <div class="imagecomp">
+                <img class="thumbnailcomp" src="generali.png">
+              </div>
+            </a>
+            <a href="http://www.allianz.co/" target="_blank">
+              <div class="imagecomp">
+                <img class="thumbnailcomp" src="Allianz.png">
+              </div>
+            </a>
+            <a href="http://www.rsagroup.com.co/" target="_blank">
+              <div class="imagecomp">
+                <img class="thumbnailcomp" src="rsa.png">
+              </div>
+            </a>
+            <a href="https://www.colpatria.com/personas-banca-seguros.aspx" target="_blank">
+              <div class="imagecomp">
+                <img class="thumbnailcomp" src="colpatria.png">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="wrapper">
+        <div id="shell">
+          <div class="contactcontiner">
+            <div class="infocontact">
+              <h2>Contáctenos hoy</h2>
+              <p>Cel:315 569 12 81  -  304 349 24 00</p>
+            </div>
+          </div>
+          <div class="contactbuttom">
+            <a href="contact.html">Contáctenos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+  
+
+

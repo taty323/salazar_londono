@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <center><title> Alianza Segura - Home</title></center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <!-- slider code -->
+    <link rel="stylesheet" type="text/css" href="style/imageScroller.css">
+    <script type="text/javascript" src="js/scroll.js"></script>
+
+    <style type="text/css">
+  
+
+  
+    /***********************  General ******************/
+
+    body {background-image:url("fondo.png") ; no-repeat top center; font-family:Arial, Helvetica, sans-serif;}
+
+    #wrapper {width:1000px; margin:0px auto;} /*will have the left and right margins increased until it becomes centered along the y-axis of the viewport.*/
+    h1, h2, h3, h4, h5, h6{font-family: 'myriad pro', arial, helevetica, sans-serif; font-weight: normal;margin: 0px;}
+
+    h2{color: #000000; font-size: 26px;padding: 0 0 10px 0; }
+    h3{color: #000000; font-size: 23px;padding: 0 0 10px 0;}
+
+    
+    p {color: #000000; font-size: 15px; line-height: 20px; padding-bottom: 10px; margin: 0px; font-family: 'myriad pro'}
+    li{color: #000000; font-size: 13px; line-height: 20px; margin: 0px;}
+    ul{margin: 0px 0px 10px 0px}
+
+    a{ color: #4B0082;text-decoration: none;;}
+    a:hover{text-decoration: underline}
+
+    /***********************  Header ******************/
+
+    #header{width: 980px; height: 165px; margin: 0px auto;}
+    #logo{width: 150px; height: 100px;padding-top: 0px; display: block; float:left;}/*The z-index property specifies the stack order of an element.An element with greater stack order is always in front of an element with a lower stack order.*/
+    #logo img {width: 230px;}
+    #contact{ width: 200px; height: 87px; float:right; margin: 35px 0 35px 0; text-align:center;}
+    #contact .type{font-size: 16px; color: #fff; font-weight: bold}
+    #contact p{font-size: 19px; color: #fff; padding: 0 0 0 0px;}
+
+    /***********************  Navigation ******************/
+
+    #naveb {z-index:1; float: left; position: relative;  padding-bottom: 20px; width: 1000px; margin-top:60px;}
+    #naveb ul {list-style:none; float: left; padding: 0px; margin: 0px; height: 42px; width: 960px; }
+    #naveb li {list-style:none; float: left; height: 42px;}
+    #naveb li a {text-decoration:none; font-size:16px; color:#ffffff; display: block;font-family: 'myriad pro', arial, helevetica, sans-serif; text-shadow: 1px 1px 1px #35080e; padding: 10px 0px 13px 0px; width: 192px; text-align:center; text-transform: uppercase}
+    #naveb li a:hover {text-decoration:none;color:#fff;background:#9C8AA5 repeat-x top left;  }
+    #naveb li a.current{text-decoration:none;color:#fff;}
+
+/*dropdown*/
+        
+    #nav,/*Selects all nav ul elements where the parent is a nav element*/ #nav ul { z-index: 500;list-style:none;margin:0px; padding: 500px; background:#421C52; width: auto; height: auto; }
+    #nav li ul {margin:0px; padding: 0px; position: absolute;left: -999em;padding:0px;z-index:500; background:#732C7B; width: auto;}
+    #nav li ul li {margin:0px; float:none;z-index:500; background:none; height: auto;width: auto;}
+    #nav li ul li a{margin:0px; padding: 10px 0px 10px 0px;color: #fff; font-size: 14px; z-index:500; background:none;width: 192px;}
+    #nav li ul li a:hover {text-decoration:none;color:#fff; background: #9C8AA5; z-index:500;}
+    #nav li:hover ul, #nav li.sfhover ul {left: auto;text-decoration:none;color:#fff; z-index:500;} /*This bit of code makes the nested menu visible on the screen when the parent list item is hovered over. Including the li:hover selector ensures the menu works without JavaScript. Also including the li.sfHover selector ensures the JavaScript menu will apply the same code.*/
+ /***********************  Banner ******************/
+
+
+    #banner{ height:285px; width:950px; padding: 0 0 15px 0; margin: 0 0 0 13px; }
+
+    /***********************  Content ******************/
+
+    #content_wrap{}
+
+    #content{width: 960px; margin:0 auto; }
+    
+
+    #main_content{width: 620px; float: right; margin-right:20px;background-color:#BDAEC6; border:solid #732C7B; margin-bottom:30px; }
+
+    #aside {width: auto; float: left; margin-right: 10px;}
+
+    #pa {padding:20px;}
+
+    #main_content h2 {color: #fff; font-size: 21px; padding-top: 15px; text-shadow: 1px 1px 1px #00193a; text-transform: uppercase; border:solid #732C7B; background:#732C7B; text-align:center; }
+    #insurance_companies {margin-bottom:10px;}
+    #banner{background-image: url(familias.jpg);border:solid #732C7B; margin-bottom:10px;}
+
+    /*********************** Quote box ******************/
+
+   
+    #quote{background: #BDAEC6 no-repeat; width: 298px; height: 700px; text-align: center; margin-bottom: 10px; border:solid #732C7B; position:relative;}
+    #quote h2{color: #fff; font-size: 21px; padding-top: 15px; text-shadow: 1px 1px 1px #00193a; text-transform: uppercase; border:solid #732C7B; background:#732C7B; }
+
+    ul.quote{margin: 0px;float: left; list-style: none; padding-left:5px;}
+    ul.quote li{display:inline-block; margin: 2px; text-transform: uppercase; font-size: 13px;background: #421C52 no-repeat top left}
+    #quote h3 {color: #000; font-size: 18px; padding: 0px; margin: 10px 0 7px 0;}
+
+    a.lrg, a.med, a.sml{height: 44px; width: 100px; padding:0px 7px 0px 7px;  color: #fff; font-family: 'myriad pro', Arial, Helvetica, sans-serif;text-shadow: 1px 1px 1px #00193a; margin:2px; display:table-cell; vertical-align:middle;}/* for putting an element in the center use display:table-cell; vertical-align:middle and then add the background into the parent element in this case the ul.quote li*/
+
+
+    a:hover.sml, a:hover.med, a:hover.lrg , a:hover.medical {color: #FFFFFF; background: #732C7B; text-decoration: none; text-shadow: none; }
+
+  /***********************  Testimonials box  ******************/
+
+   #testimonials{ width: 298px; height:200px; margin-bottom: 10px;background: #BDAEC6 no-repeat; text-align: center; border:solid #732C7B;}
+
+   #testimonials h2 {color: #fff; font-size: 21px; text-shadow: 1px 1px 1px #00193a; text-align: center; padding-top: 15px; text-transform: uppercase; background:#732C7B; border:solid #732C7B}
+
+   #aside p.testimonials { height: 280px; width: 286px; position:relative; padding-top:15px; font-style: italic}
+
+/***********************  Footer ******************/
+
+   #footer {text-align: center; padding: 0;}
+   #footer h2{font-style: italic; color: #000; font-size: 20px; padding-top: 35px;}
+   #footer p{color: #000; font-size: 17px; font-family: 'myriad pro'}
+  
+
+
+
+    </style>
+  </head>
+  <body>
+  <div id="wrapper">
+    <div id="header">
+
+      <!-- 
+      <div id="contact">
+        <p style="padding-top: 23px;">
+          <span class= "type"> CEL
+          </span>
+          <br>
+          ( 315 ) 569 - 1281 
+        </p>
+
+        <p>
+          <span class= "type">
+          </span>
+          ( 304 )  349 - 2400 
+        </p>
+      </div>
+      -->
+      <div id="logo">
+        <img src="logo alianza segura.png" alt= "Alianza Segura">
+      </div>
+      <div id="naveb">
+        <ul class="nav" id="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Nuestra Compañia</a></li>
+          <li>
+            <a href="/">Productos</a>
+            <ul> 
+              <li>
+                <a href="/">Soluciones Individuales</a>
+              </li>
+              <li>
+                <a href="/">Soluciones Bienes</a>
+              </li>
+              <li>
+                <a href="/">Soluciones Empresariales</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/">Recursos</a></li>
+          <li><a href="/">Contactenos</a></li>
+      </div>
+    </div>
+
+
+    <div id="content_wrap">
+      <div id= "banner" style="width:948px; height 282px; overflow:hidden; position:relative">
+      </div>
+
+      <div id="content">
+      <div id="main_content">
+        <h2> Bienvenido a Alianza Segura </h2>
+        <div id="pa">
+          
+          <h3></h3>
+
+          <p> 
+
+          Nos comprometemos a entregarle una completa cobertura y acompañamiento para que pueda vivir una vida mas segura. El amplio portafolio de compañías que nos respaldan nos permiten entregarle un servicio personalizado y con transparencia que nos convierte en su agencia de confianza.  Contamos con el respaldo de solidas compañías de seguros como:
+          </p>
+
+        <!-- Images -->
+          <div id="insurance_companies">    
+                <div id="outerContainer">
+                    <div id="imageScroller">
+                        <div id="viewer" class="js-disabled">
+                          <a class="wrapper" href="http://www.sura.com/default.aspx" target="_blank"><img class="logo" src="http://www.infochiriqui.com/oscom/images/sura.jpg" height="45" alt="Suramericana de Seguros"></a>
+                          <a class="wrapper" href="http://www.arlsura.com/" target="_blank"><img class="logo" src="http://www.knowbi.com/clientes/arpsura/envios/2013/arp-sura-ahora-es-arl-sura-clientes/imagenes/clientes_01.jpg" height="36" alt="ARL Sura"></a>
+                          <a class="wrapper" href="https://www.aseguradorasolidaria.com.co" target="_blank"><img class="logo" src="https://www.aseguradorasolidaria.com.co/userfiles/image/Empresa/logo_aseguradora_solidaria.gif" height="42" alt="Aseguradora Solidaria"></a>
+                          <a class="wrapper" href="http://www.generali.com.co/" target="_blank"><img class="logo" src="http://www.colcarros.com/comunidad/wp-content/uploads/2011/11/generali-seguros-logo.jpg" height="51" alt="Generali Seguros"></a>
+                          <a class="wrapper" href="http://www.allianz.co/" target="_blank" title="Health Net"><img class="logo" src="https://www.allianz.com/v_1341145622000/media/press/media_database/allianz_logo.jpg" height="35" alt="Allianz"></a>
+                          <a class="wrapper" href="http://www.rsagroup.com.co/" target="_blank"><img class="logo" src="http://asklogo.com/images/R/royal%20%20sun%20alliance%20logo.jpg" height="45" alt="RSA"></a>
+                          <a class="wrapper" href="https://www.colpatria.com/personas-banca-seguros.aspx" target="_blank"><img class="logo" src="http://seguroscapital.files.wordpress.com/2011/05/colpatria.jpg?w=350" height="45" alt="Seguros Colpatria"></a>
+                        </div>
+                    </div>
+                </div>    
+          </div>
+
+
+          <p> Alianza Segura es una agencia ubicada en la ciudad de Cali, Colombia sirviendo a todo el Suroccidente Colombiano. Como dueño de su negocio, cabeza de su familia o individual, usted será dirigido hacia los productos que mejor se ajusten a sus necesidades y presupuesto.  Desde la selección del plan, a la implementación, a la eventual asistencia y reclamaciones, los servicios de Alianza Segura van a satisfacer sus necesidades y exceder sus expectativas. </p>
+
+        <p>Llámenos para que tengamos el gusto de atenderle</p>
+        </div>
+      </div>
+      <div id="aside">
+        <div id="quote">
+          <h2>Cotize con Nosotros
+           <strong>Gratis</strong>
+          </h2>
+          <h3> Soluciones Individuales</h3>
+             <ul class="quote">
+              <li><a href="/" target="blank" class="med">Vida Individual</a></li>
+              <li><a href="/" target="blank" class="lrg">Accidentes personales</a></li>
+              <li><a href="/" target="blank" class="med">Exequias</a></li>
+              <li><a href="/" target="blank" class="med">Renta Educativo</a></li>
+              <li><a href="/" target="blank" class="lrg">Enfermedades Graves</a></li>
+              <li><a href="/" target="blank" class="med">Renta Pensional  </a></li>
+              <li><a href="/" target="blank" class="sml">Salud</a></li>
+            </ul>
+          <h3>Soluciones Bienes</h3>
+            <ul class="quote">
+              <li><a href="/" target="blank" class="med">Automoviles</a></li>
+              <li><a href="/" target="blank" class="lrg">Utilitarios y pesados</a></li>
+              <li><a href="/" target="blank" class="sml">Soat</a></li>
+              <li><a href="/" target="blank" class="sml">Hogar</a></li>
+            </ul>
+          <h3>Soluciones Empresariales</h3>
+            <ul class="quote">
+              <li><a href="/" target="blank" class="med">Vida Grupo</a></li>
+              <li><a href="/" target="blank" class="med">Vida Deudores</a></li>
+              <li><a href="/" target="blank" class="lrg">Todo riesgo Incendio</a></li>
+              <li><a href="/" target="blank" class="med">Estudiantil</a></li>
+              <li><a href="/" target="blank" class="med">Cumplimiento</a></li>
+              <li><a href="/" target="blank" class="lrg">Riesgos Profesionales</a></li>
+              <li><a href="/" target="blank" class="med">Auto Colectivo</a></li>
+              <li><a href="/" target="blank" class="sml">Soat</a></li>
+            </ul>
+        </div>
+        <!-- 
+        <div id="testimonials">
+          <h2> Testimonios de Clientes</h2>
+            <p>Presentación comercial de nuestra agencia ALIANZA SEGURA Asesores de Seguros.  En ella encontrara los productos en seguros mediante los cuales podremos crear una alianza con la empresa o los asegurados, con el fin de beneficiar a los mismos.</p>
+        </di>
+        -->
+      </div>
+    </div>
+  </div>
+  <div id= "footer">
+    <h2> ALIANZA SEGURA<h2>
+      <p>
+        Asesores de Seguros
+        <br>
+        Cali, Colombia
+        <br>
+        315 569-12-81
+        <br>
+        304 349-24-00
+      </p>
+    </div>
+  </body>
+</html>

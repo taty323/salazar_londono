@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sample</title>
+
+<style type="text/css">
+
+body {
+    background:#1d2733;
+    color:#fff;
+    margin:0;
+}
+
+#col1 {
+    width:300px;
+    height:129px;
+    float:left; 
+    padding-bottom:20px;
+}
+#col2 {
+    width:600px;
+    float:right;
+    padding-top:150px;
+    border-bottom: 2px solid white;
+}
+
+#shadowedlinks {
+    width:600px;
+    float:right;
+    position:absolute;
+    margin-top:-30px;
+    top:0;
+}
+
+#shadowedlinks div
+{
+    display: none;
+}
+
+.lnk{
+    position:absolute;
+    font-size:180px;
+    text-align:center;
+    font-weight:bold;
+    color:#444;
+    top: -15px;
+    z-index: -1;
+}
+
+#links {
+    width:600px;
+    float:right;
+    position:absolute;
+    top:0;
+    padding-top:100px;
+}
+
+#links h1 {
+    float:left;
+    font-size:30px;
+    text-align:center;
+    padding:0 20px; 
+}
+#links a {
+    color:#fff;
+    text-decoration:none;
+}
+#links a:hover{
+    color:#FF9;
+}
+
+#links .lnk
+{
+    display: none;
+}
+
+.link-home:hover ~ #lnkHome,
+.link-1:hover ~ #lnk1,
+.link-2:hover ~ #lnk2,
+.link-3:hover ~ #lnk3
+{
+    display: block;
+}
+
+</style>
+</head>
+
+<body>
+<div id="col1">
+<h1><a href="index.php"><img src="imgs/logo.png" class="logo" border="0" width="250" height="129" /></a></h1>
+</div>
+<div id="col2">
+<div id="links">
+    <a class="link-home" href="index.php"><h1>HOME</h1></a>
+    <a class="link-1" href="link1.php"><h1>LINK1</h1></a>
+    <a class="link-2" href="link2.php"><h1>LINK2</h1></a>
+    <a class="link-3" href="link3.php"><h1>LINK3</h1></a>
+
+    <div class="lnk" id="lnkHome">HOME</div>
+    <div class="lnk" id="lnk1">LINK1</div>
+    <div class="lnk" id="lnk2">LINK2</div>
+    <div class="lnk" id="lnk3">LINK3</div>
+</div>

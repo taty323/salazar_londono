@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <center><title> Alianza Segura - Compañia</title></center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <!-- slider code -->
+    <link rel="stylesheet" type="text/css" href="style/imageScroller.css">
+    <script type="text/javascript" src="js/scroll.js"></script>
+
+    <style type="text/css">
+
+    body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin: 0;text-align: center;background-color:rgba(189,174,198,0.3)}
+   
+    h1, h2, h3, h4, h5, h6{font-family: 'myriad pro', arial, helevetica, sans-serif; font-weight: normal;margin: 0px;}
+
+    h2{color: #000000; font-size: 26px;padding: 0 0 10px 0; }
+    h3{color: #000000; font-size: 23px;padding: 0 0 10px 0;}
+    
+    p {color: #000000; font-size: 15px; line-height: 20px; padding-bottom: 10px; margin: 0px; font-family: 'myriad pro'}
+    li{color: #000000; font-size: 13px; line-height: 20px; margin: 0px;}
+    ul{margin: 0px 0px 10px 0px}
+
+    a{ color: #fff;text-decoration: none;;}
+    a:hover{text-decoration: underline}
+
+
+
+     /***********************  Navigation rgba(189,174,198,0.2) ******************/
+
+    #bar-back {width:100%; height:62px;z-index: 7;background:rgba(255,255,255,);position:relative;}
+    #wd-navbar{width:100%; height:62px;z-index: 10; position:fixed;background: rgba(245,245,245,0.8)}
+    #wd-navbar div.logo{width: 108px; height: 45px; padding-top: 0px; display: inline; float:left;margin-top:5px;margin-bottom: 5px; margin-right:40px; margin-left:80px;}
+    #wd-navbar img {height:52px;}
+    #naveb {position: relative;width: 100px; z-index:1; display:inline;}
+    #naveb ul {list-style:none; float: left; padding: 0px; height: 62px; width: 960px; }
+    #naveb li {list-style:none; float: left; height: 62px;}
+    #naveb li a {text-decoration:none; font-size:16px; color:#777; display: block;font-family: 'myriad pro', arial, helevetica, sans-serif; ; padding: 23px 0px 0px 0px; width: 192px;height: 39px; text-align:center; text-transform: uppercase}
+    #naveb li a:hover {text-decoration:none;color:#fff; background:#732c7b repeat-x top left;  }
+    #naveb li a.current{text-decoration:none;color:#fff;}
+
+      /*dropdown*/
+        
+    #nav,/*Selects all nav ul elements where the parent is a nav element*/ #nav ul { z-index: 500;list-style:none;margin:0px; padding: 500px; width: auto; height: auto; }
+    #nav li ul {margin:0px; padding: 0px; position: absolute;left: -999em;padding:0px;z-index:500; background:rgba(245,245,245,0.8); width: auto;}
+    #nav li ul li {margin:0px; float:none;z-index:500; background:none; height: auto;width: auto;}
+    #nav li ul li a{margin:0px; padding: 10px 0px 10px 0px;color: #777; font-size: 14px; z-index:500; background:none;width: 192px;}
+    #nav li ul li a:hover {text-decoration:none;color:#fff; background-color: #732c7b) z-index:500;}
+    #nav li:hover ul, #nav li.sfhover ul {left: auto;text-decoration:none;color:#fff; z-index:500;} /*This bit of code makes the nested menu visible on the screen when the parent list item is hovered over. Including the li:hover selector ensures the menu works without JavaScript. Also including the li.sfHover selector ensures the JavaScript menu will apply the same code.*/
+
+   /***********************  collage .lnk{ position:absolute;}
+    #links { position:absolute;} ******************/
+    .about{margin-top:100px; position:absolute; width:100%;}
+    .left{width:830px;height:701px; display: inline-block; float: left;}
+    .collage {width: 830px; height:701px; margin-right:50px;margin-left:230px;}
+    .product-S1 {height:300px; float:left; margin-bottom:10px; z-index: 0;}
+    .product-S2 {width:295px; float:left;margin-right:10px;}
+    .product-S3 {width:295px; float:left;}
+    .contact-S {background-color:#732c7b; width:600px; float:left; margin-top:10px; padding-top:15px; padding-bottom:15px;}
+    .contact-S:hover{text-decoration:none; opacity:1;background:#421c52}
+
+    
+    .link-home:hover img{opacity: 0.3;}
+    .link-home h1{display: none;}
+    .link-home:hover h1{display: block; margin-left: -430px; margin-top: 130px; float:left;color:#421c52; text-shadow: 0 2px 3px rgba(0,0,0,0.1)}
+
+    .link-1:hover img{opacity: 0.3;}
+    .link-1 h3{display: none;}
+    .link-1:hover h3{display: block; margin-left: -265px; margin-top: 87px; float:left;color:#421c52; text-shadow: 0 2px 3px rgba(0,0,0,0.1)}
+
+    .link-2:hover img{opacity: 0.3;}
+    .link-2 h3{display: none;}
+    .link-2:hover h3{display: block; margin-left: -265px; margin-top: 87px; float:left;color:#421c52; text-shadow: 0 2px 3px rgba(0,0,0,0.1)}
+
+
+
+  /***********************  main  ******************/
+    .right {width: 350px; float: left; display:inline; text-align:left;margin-left:10px;}
+
+
+    
+
+   body .containder, #wd-navbar, .about {
+      min-width: 1250px;
+    }
+
+
+   </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="wd-navbar"> 
+        <div class="logo"> <img src="alianza_segura.png"></div> 
+        <div id="naveb">
+          <ul ul class="nav" id="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="company.html">Nuestra Compañia</a></li>
+            <li>
+              <a href="#">Productos</a>
+              <ul> 
+                <li>
+                  <a href="#">Seguros Personales </a>
+                </li>
+                <li>
+                  <a href="#">Seguros Patrimoniales</a>
+                </li>
+                <li>
+                  <a href="#">Seguros Empresariales </a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Recursos</a></li>
+            <li><a href="contact.html">Contactenos</a></li>
+          </div>
+      </div>
+      <div class="about"> 
+        <div class="left">
+          <div class="collage">    
+              <a class="link-home" href="#"><img class="product-S1" src="patrimonio.jpg"><h1>Seguros Personales</h1></a>
+              <div class="purpleBG" id="a1"></div>
+              <a class= "link-1" href="#"><img class="product-S2" src="personal.jpg"><h3>Seguros Patrimoniales</h3></a>
+              <a class="link-2" href="#"><img class="product-S3" src="empresa.jpg"><h3>Seguros Empresariales</h3></a>
+              <a href="contact.html" class="contact-S"> CONTACTENOS</a>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Misión</h3>
+          <p>Servir a la comunidad, creando conciencia del seguro beneficiando con una asesoría integral, honesta y trasparente.  Teniendo como prioridad la protección, tranquilidad, rentabilidad, personal, familiar y patrimonial de nuestros clientes </p>
+          <h3>Visión</h3>
+          <p>Consolidarnos como empresa líder en el mercado asegurador; cumpliendo con el propósito de ser un aliado de calidad para nuestros clientes y que nos conozcan por la eficiencia, seriedad y honestidad en el servicio en todo el territorio nacional a mediano plazo.   El amplio portafolio de compañías que nos respaldan nos permiten entregarle un servicio personalizado y con transparencia que nos convierte en su agencia de confianza</p>
+          <h3>Beneficios para el Asegurado<h3>
+          <p>Bajas tarifas por estar en grupo, pago mensual mediante nomina, atención personalizada, oportunidad de conseguir en el fondo lo necesario en protección, la oportunidad de cotizar en varias compañías a través de un solo intermediario.  Cualquier información adicional respecto de esta y otras necesidades de protección, con gusto la atenderemos</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
+
+      

@@ -1,0 +1,63 @@
+/* Basic jQuery Slider essential styles */
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{display:none;position:absolute;}
+
+ul.bjqs-controls{display:none;}
+
+ol.bjqs-markers{display:none;}
+ol.bjqs-markers li{display:none;}
+
+p.bjqs-caption{display:none;}
+
+/* demo styles */
+
+
+
+#container{
+  width: 448px;
+  
+  overflow:hidden;
+}
+
+#banner {
+		padding-top: 3px;
+  height: 282px;
+	width: 448px;
+  position:relative;
+}
+
+ ul.bjqs-controls li a{
+  display:none;
+}
+
+a.bjqs-prev{
+  left:0;
+}
+
+a.bjqs-next{
+  right:0;
+}
+
+ p.bjqs-caption{
+  display: none;
+}
+
+ ol.bjqs-markers{
+  display: none;
+}
+
+ ol.bjqs-markers li{
+  display: none;
+}
+
+ ol.bjqs-markers li a{
+  display: none;
+}
+
+ol.bjqs-markers li.active-marker a{
+  display: none;
+}
+
+
+
